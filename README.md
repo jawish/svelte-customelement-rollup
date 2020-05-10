@@ -11,4 +11,4 @@ svelte({ customElement: false, exclude: /\.wc\.svelte$/ }),
 
 In the custom element below, only the my-component is exposed as the web component in the build while OtherComponent and NestedComponent as built as normal Javascript Svelte components.
 
-See the built demo: [https://jawish.github.io/jawish/svelte-customelement-rollup](https://jawish.github.io/jawish/svelte-customelement-rollup).
+See the built demo: [https://jawish.github.io/svelte-customelement-rollup](https://jawish.github.io/svelte-customelement-rollup).
