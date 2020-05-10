@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>Svelte Custom Element Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      padding: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+  <script src="dist/index.js"></script>
+</head>
+<body>
+  <h1>Svelte Custom Element vs Svelte Component</h1>
+  <p>This demo demostrates how to use Rollup's config to allow building and exposing some Svelte components with svelte-options tag set and 
+    customElements=true while allowing other components to be built and used as Svelte components.</p>
+    This is achieved by using the special file extension '.wc.svelte' for components to be built as Custom Elements and the usual '.svelte' extension for Svelte components.</p>
+  <p>In the custom element below, only the <i>my-component</i> is exposed as the web component in the build while OtherComponent and NestedComponent as built as normal Javascript Svelte components.</p>
+  <p>See the git repository for code: <a href="https://github.com/jawish/svelte-customelement-rollup">https://github.com/jawish/svelte-customelement-rollup</a></p>
+  
+  <hr />
+  
+  <my-component/>
+</body>
+</html>
