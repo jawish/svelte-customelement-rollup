@@ -1,0 +1,15 @@
+# IDE
+.idea/
+.vscode
+.history
+
+# NPM
+node_modules
+
+# Build
+/dist/
+
+# Misc
+*.log
+.DS_Store
+
