@@ -14,8 +14,12 @@ export default {
 		{ file: pkg.main, 'format': 'umd', name }
 	],
 	plugins: [
-		svelte({ customElement: true, include: /\.wc\.svelte$/ }),
-		svelte({ customElement: false, exclude: /\.wc\.svelte$/ }),
+		svelte({ customElement: true, include: /\.wc\.svelte$/,
+			css: css => { css.write('dist/bundle.css'); }
+		}),
+		svelte({ customElement: false, exclude: /\.wc\.svelte$/,
+			css: css => { css.write('dist/bundle.css'); }
+		}),
 		resolve()
 	]
 };
